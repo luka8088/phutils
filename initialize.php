@@ -11,3 +11,15 @@ spl_autoload_register(function ($class) {
   if (is_file($file))
     require_once $file;
 });
+
+function string ($value) {
+  return new string($value);
+}
+
+function password ($value) {
+  return new password($value);
+}
+
+function passwordHash ($value) {
+  return new passwordHash($value);
+}
